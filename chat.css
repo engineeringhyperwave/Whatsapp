@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffffe0;
+}
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 190px;
+  cursor: pointer;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px #9a9a9a81;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #25D366;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.gender-option {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.gender-option:hover {
+  background-color: #d9fdd3;
+  border-color: #25D366;
+}
+
+.gender-option.selected {
+  background-color: #25D366;
+  color: white;
+  border-color: #25D366;
+}
+
+button {
+  width: 100%;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #1ebe5d;
+}
+
+@media (max-width: 480px) {
+  .form-wrapper {
+    min-height: calc(80vh - 100px);
+    padding: 10px;
+  }
+
+  .form-container {
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input, textarea {
+    font-size: 15px;
+  }
+
+  .gender-option {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
